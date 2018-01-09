@@ -1,0 +1,25 @@
+<mvc:View controllerName="tinyui.controller.Index" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+	xmlns="sap.m">
+	<App>
+		<pages>
+			<Page title="{i18n>title}">
+				<content>
+					<Table title="European Countries" id="idProductsTable" items="{/euro}">
+						<columns>
+							<Column width="12em">
+								<Text text="Country Name"/>
+							</Column>
+						</columns>
+						<items>
+							<ColumnListItem>
+								<cells>
+									<Text text="{name}"/>
+								</cells>
+							</ColumnListItem>
+						</items>
+					</Table>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
